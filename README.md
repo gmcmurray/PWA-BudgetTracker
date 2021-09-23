@@ -13,18 +13,18 @@
 
 ---------------------------------------
 ## 1. Description <a id="descrip"> </a>
-Project implements an IndexDB app which allows for offline operation.  IndexDB uses an object data base located in the browser (client side).  The creation and all CRUD operations are invoked through JavaScript and found in the db.js file in Public folder on the client side.
+Project implements an IndexDB app which allows for offline operation.  IndexDB uses an object data base located in the browser (client side).  The creation and all CRUD operations are invoked through JavaScript and found in the db.js file in Public folder on the client side. Once the application is back online the IndexDB bulk transfers all content to the MongoDB in the server and purges its documents.
 
 ----------------------------------------------
 
 ## 2. Installation <a id="install"></a>
 Installation Instructions: 
 
-1) Clone from repo noted below.  2) Run npm i in terminal found where the packag.json file is 3) Run node server.js to instantiate MongoDB database and IndexDB. 4) Open localhost port 3333 and enter some budget data.  4) Open Dev Tools and find Network tab and take server offline. 5) Add more budget data in browser (this data is loading into IndexDB - see Applications tab in Dev tools and.  6) Bring Network back online and 
+1) Clone from repo noted below.  2) Run npm i in terminal found where the packag.json file is 3) Run node server.js to instantiate MongoDB database and IndexDB. 4) Open localhost port 3333 and enter some budget data.  4) Open Dev Tools and find Network tab and take server offline. 5) Add more budget data in browser (this data is loading into IndexDB - see Applications tab in Dev tools and.  6) Bring Network back online and examine the server data base to see all documents added during the offline operation have been uploaded to server, and then purged from the client side IndexDB.
 
 Files used in API found : https://github.com/gmcmurray/PWA-BudgetTracker 
 
-API deployed here : https://github.com/gmcmurray/PWA-BudgetTracker
+API deployed here on Heroku: https://warm-waters-18979.herokuapp.com/
 
 -------------------------------------------------
 
